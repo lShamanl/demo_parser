@@ -1,0 +1,28 @@
+{
+  "name": "demo/parser",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "scripts": {
+    "migrate": "php src/Console/migrate.php",
+    "createSeeds": "php src/Console/createSeeds.php",
+    "parse": "php src/Console/parse.php"
+  },
+  "authors": [
+    {
+      "name": "shaman",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "lShamanl\\Parser\\": "src/"
+    }
+  },
+  "require-dev": {
+    "fakerphp/faker": "^1.13"
+  },
+  "require": {
+    "ext-pdo": "*"
+  }
+}
